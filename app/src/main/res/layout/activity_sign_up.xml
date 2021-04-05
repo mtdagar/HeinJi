@@ -27,7 +27,7 @@
             android:layout_height="100dp"
             app:srcCompat="@drawable/chatting_logo" />
 
-        <TextView
+        <EditText
             android:id="@+id/etUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             android:padding="9dp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tvClickSignIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "924986181804",
+    "project_id": "hein-ji",
+    "storage_bucket": "hein-ji.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924986181804:android:5904ea92e6bc2437df7709",
+        "android_client_info": {
+          "package_name": "com.example.heinji"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924986181804-qjnh9a69hmkulsnoi4croqanr0jgmu52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqlJYgFov_MDFA9ccIHyTF4OVa8llKCT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924986181804-qjnh9a69hmkulsnoi4croqanr0jgmu52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
