@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.heinji.Models.Users;
 import com.example.heinji.databinding.ActivitySignUpBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -42,6 +43,12 @@ public class SignUpActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if(task.isSuccessful()){
+                            Users user = new Users(binding.etUserName.getText().toString(), binding.etEmail.getText().toString(),
+                                    binding.etPassword.getText().toString());
+
+                            String id = task.getResult().getUser().getUid();
+                            database.getReference().child("Users").child(id).setValue(user);
+
 
                             Toast.makeText(SignUpActivity.this, "User Created Successfully", Toast.LENGTH_SHORT).show();
                         }
