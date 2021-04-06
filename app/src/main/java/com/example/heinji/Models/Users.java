@@ -5,6 +5,27 @@ public class Users {
     String profilepic;
     String userName;
     String mail;
+    String password;
+    String userID;
+    String lastMessage;
+
+    public Users(String profilepic, String userName, String mail, String password, String userID, String lastMessage) {
+        this.profilepic = profilepic;
+        this.userName = userName;
+        this.mail = mail;
+        this.password = password;
+        this.userID = userID;
+        this.lastMessage = lastMessage;
+    }
+
+    public Users(){}
+
+    // SignUp Constructor
+    public Users(String userName, String mail, String password) {
+        this.userName = userName;
+        this.mail = mail;
+        this.password = password;
+    }
 
     public String getProfilepic() {
         return profilepic;
@@ -53,19 +74,5 @@ public class Users {
     public void setLastMessage(String lastMessage) {
         this.lastMessage = lastMessage;
     }
-
-    String password;
-
-    public Users(String profilepic, String userName, String mail, String password, String userID, String lastMessage) {
-        this.profilepic = profilepic;
-        this.userName = userName;
-        this.mail = mail;
-        this.password = password;
-        this.userID = userID;
-        this.lastMessage = lastMessage;
-    }
-
-    String userID;
-    String lastMessage;
 
 }
