@@ -3,6 +3,7 @@ package com.example.heinji;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -20,7 +21,7 @@ public class SignUpActivity extends AppCompatActivity {
     ActivitySignUpBinding binding;
     private FirebaseAuth auth;
     FirebaseDatabase database;
-
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,15 +33,21 @@ public class SignUpActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
 
+        progressDialog = new ProgressDialog(SignUpActivity.this);
+        progressDialog.setTitle("Creating Account");
+        progressDialog.setMessage("We are creating your account");
+
+
         binding.btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                progressDialog.show();
                 auth.createUserWithEmailAndPassword
                         (binding.etEmail.getText().toString() , binding.etPassword.getText().toString()).
                         addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+                        progressDialog.dismiss();
 
                         if(task.isSuccessful()){
                             Users user = new Users(binding.etUserName.getText().toString(), binding.etEmail.getText().toString(),
