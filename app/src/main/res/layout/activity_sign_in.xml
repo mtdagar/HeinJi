@@ -74,7 +74,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_google"
+                android:id="@+id/btnGoogle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="4dp"
@@ -87,7 +87,7 @@
                 app:cornerRadius="4dp" />
 
             <Button
-                android:id="@+id/btn_fb"
+                android:id="@+id/btFb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
