@@ -61,7 +61,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/backArrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/left_arrow"
@@ -79,7 +79,7 @@
                 android:src="@drawable/avatar"
                 app:civ_border_color="#FF000000"
                 app:civ_border_width="2dp"
-                app:layout_constraintLeft_toRightOf="@id/imageView2"
+                app:layout_constraintLeft_toRightOf="@id/backArrow"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
