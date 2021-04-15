@@ -18,6 +18,14 @@ public class Users {
         this.lastMessage = lastMessage;
     }
 
+    public String getUserID() {
+        return userID;
+    }
+
+    public void setUserID(String userID) {
+        this.userID = userID;
+    }
+
     public Users(){}
 
     // SignUp Constructor
@@ -59,13 +67,6 @@ public class Users {
         this.password = password;
     }
 
-    public String getUserID(String key) {
-        return userID;
-    }
-
-    public void setUserID(String userID) {
-        this.userID = userID;
-    }
 
     public String getLastMessage() {
         return lastMessage;
