@@ -15,6 +15,7 @@ import com.example.heinji.Adapters.UserAdapter;
 import com.example.heinji.Models.Users;
 import com.example.heinji.R;
 import com.example.heinji.databinding.FragmentChatsBinding;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -55,7 +56,8 @@ public class ChatsFragment extends Fragment {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Users users = dataSnapshot.getValue(Users.class);
                     users.setUserID(dataSnapshot.getKey());
-                    list.add(users);
+                    if(!users.getUserID().equals(FirebaseAuth.getInstance().getUid()))
+                        list.add(users);
 
                 }
 

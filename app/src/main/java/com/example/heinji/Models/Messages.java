@@ -2,7 +2,7 @@ package com.example.heinji.Models;
 
 public class Messages {
 
-    String uId , message;
+    String uId , message , messageId;
     Long timestamp;
 
     public Messages(String uId, String message, Long timestamp) {
@@ -18,6 +18,13 @@ public class Messages {
 
     public Messages() {}
 
+    public String getMessageId() {
+        return messageId;
+    }
+
+    public void setMessageId(String messageId) {
+        this.messageId = messageId;
+    }
 
     public String getuId() {
         return uId;
