@@ -3,7 +3,10 @@ package com.example.heinji;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -12,6 +15,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.heinji.Adapters.FragmentsAdapter;
+
 import com.example.heinji.databinding.ActivityMainBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;

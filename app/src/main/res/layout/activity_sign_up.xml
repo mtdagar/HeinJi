@@ -96,6 +96,7 @@
             android:layout_marginTop="15dp"
             android:padding="15dp"
             android:text="Sign Up"
+            android:backgroundTint="@color/colorPrimaryDark"
             app:cornerRadius="15dp" />
 
         <LinearLayout
@@ -136,7 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="Sign up with phone"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="18sp" />
     </LinearLayout>
 </LinearLayout>

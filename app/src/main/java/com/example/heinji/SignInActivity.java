@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import com.example.heinji.Models.Users;
 import com.example.heinji.databinding.ActivitySignInBinding;
-import com.example.heinji.databinding.ActivitySignUpBinding;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
