@@ -5,54 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ChatDetailActivity"
-    android:background="@color/chatBackground">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/chatRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/linear"
-        android:layout_below="@id/toolbar" />
-
-    <LinearLayout
-        android:id="@+id/linear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        >
-
-
-        <EditText
-            android:id="@+id/etMessage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/bg_et_message"
-            android:ems="10"
-            android:hint="Enter your message"
-            android:inputType="textPersonName"
-            android:padding="10dp"
-            android:layout_marginLeft="3dp"/>
-
-        <ImageView
-            android:id="@+id/send"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:background="@drawable/round_shape"
-            android:backgroundTint="@color/colorPrimary"
-            android:padding="10dp"
-            app:tint="@color/white"
-            app:srcCompat="@drawable/ic_send" />
-    </LinearLayout>
+    android:background="@color/lightGrey">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@color/white"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme">
 
@@ -65,6 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/left_arrow"
+                app:tint="@color/colorPrimaryDarker"
                 app:layout_constraintBottom_toBottomOf="@+id/profile_image"
                 app:layout_constraintLeft_toRightOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -79,8 +39,8 @@
                 android:src="@drawable/avatar"
                 app:civ_border_color="#FF000000"
                 app:civ_border_width="2dp"
-                app:layout_constraintLeft_toRightOf="@id/backArrow"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/backArrow"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -92,6 +52,7 @@
                 android:text="user name"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/profile_image"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -102,6 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
+                app:tint="@color/colorPrimaryDarker"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toLeftOf="@+id/imageView4"
                 app:layout_constraintTop_toTopOf="parent"
@@ -113,6 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
+                app:tint="@color/colorPrimaryDarker"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toLeftOf="@+id/imageView5"
                 app:layout_constraintTop_toTopOf="parent"
@@ -124,6 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
+                app:tint="@color/charcoal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -132,6 +96,53 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear"
+        android:layout_below="@id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:background="@color/white"
+        >
+
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_et_message"
+            android:drawableLeft="@drawable/ic_smile"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/charcoal"
+            android:ems="10"
+            android:hint="Type a message"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:layout_marginLeft="3dp"/>
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/round_shape"
+            android:backgroundTint="@color/colorPrimaryDarker"
+            android:padding="12dp"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/ic_right_arrow" />
+    </LinearLayout>
 
 
 </RelativeLayout>

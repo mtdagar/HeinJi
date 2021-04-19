@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <rotate
             android:fromDegrees="-45"
@@ -18,4 +18,16 @@
             <corners android:radius="4dp" />
         </shape>
     </item>
-</layer-list>
+</layer-list>-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@color/white"
+        />
+    <corners
+        android:topRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        />
+
+</shape>

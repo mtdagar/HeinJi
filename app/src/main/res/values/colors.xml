@@ -10,6 +10,7 @@
 
     <color name="colorPrimary">#FFF</color>
     <color name="colorPrimaryDark">#31a8f8</color>
+    <color name="colorPrimaryDarker">#1565c0</color>
     <color name="colorAccent">#73e8ff</color>
 
     <color name="lightGrey">#EDEDED</color>
@@ -27,6 +28,7 @@
     <color name="actionbar_background">#31a8f8</color>
 
 
-
     <color name="darker_gray">#bdbdbd</color>
+    <color name="charcoal">#212121</color>
+
 </resources>
